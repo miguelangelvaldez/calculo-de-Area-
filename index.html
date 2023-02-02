@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Área</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">    
+        <h1>Calculadora de Área</h1>
+        
+        <div class="item" id="cardTriangle">
+            </br>
+            <div class="triangleCal">
+            <h3>Área del triangulo</h3>
+            <input type="text" id="base" placeholder="Base/Lado">                       
+            <button class ="btn1" onclick="calAreaTriangle()">Calcular</button> 
+            <input type="button" class ="btn2" value="Limpiar" onclick="location.reload()">
+            </div>
+            <p>El área del triangulo es de: <span id="areaT"></span></p>
+            <img src="triangulo.png"width="100" height="100">
+        </div>
+
+         <div class="item2" id="cardRectangle">
+            </br>
+            <div class="rectangle">
+            <h3>Área del rectangulo</h3>
+            <input type="text" id="baseRec" placeholder="Base">       
+            <input type="text" id="heiGhtRec" placeholder="Altura">      
+            <button class ="btn1" onclick="calAreaRectangle()">Calcular</button>
+            <input type="button" class ="btn2" value="Limpiar" onclick="location.reload()">
+        </div>
+            <p>El área del rectangulo es de: <span id="areaR"></span></p>
+            <img src="rectangulo.png"width="100" height="100">
+        </div>
+   
+         <div class="item" id="cardSquare">       
+            </br>
+            <div class="square">
+            <h3>Área del cuadrado</h3>
+            <input type="text" id="side" placeholder="Lado">
+            <button class ="btn1" onclick="calAreaSquare()">Calcular</button>
+            <input type="button" class ="btn2" value="Limpiar" onclick="location.reload()">
+        </div>
+            <p>El área del cuadrado es de: <span id="areaS"></span></p>
+            <img src="cuadrado.png"width="100" height="150">
+            
+        </div>
+
+        <div class="item2" id="cardCircle">
+            </br>
+            <div class="circle">
+            <h3>Área del circulo</h3>
+            <input type="text" id="radio" placeholder="Radio">
+            <button class ="btn1" onclick="calAreaCircle()">Calcular</button>
+            <input type="button" class ="btn2" value="Limpiar" onclick="location.reload()">
+        </div>
+            <p>El área del circulo es de: <span id="areaC"></span></p>
+            <img src="circulo.png"width="100" height="100">
+        </div>
+    </div>
+    
+
+    <script src="./main.js"></script>
+
+    </body>
+</html>
